@@ -51,23 +51,14 @@
           <p class="abertura__dica">Rola devagar pra abrir <span aria-hidden="true">↓</span></p>
         </section>
 
-        <!-- CENA 1: Kakashi -->
+        <!-- CENA 1: Rabisco original de volta -->
         <section class="cena" data-cor="#e5eeff">
           <svg class="rabisco" viewBox="0 0 200 200" aria-hidden="true">
-            <!-- Cabelo arrepiado clássico do Kakashi -->
-            <path class="traco" d="M70 70 L60 30 L85 50 L100 20 L115 50 L140 30 L130 70"/>
-            <!-- Contorno do rosto e bandana cobrindo o olho esquerdo -->
-            <path class="traco" d="M65 70 Q65 140 100 145 Q135 140 135 70 Z"/>
-            <path class="traco" d="M62 70 L138 70 L135 95 L65 95 Z"/>
-            <!-- Placa da bandana na testa -->
-            <path class="traco" d="M85 73 L115 73 L115 92 L85 92 Z"/>
-            <circle class="traco" cx="100" cy="82" r="3"/>
-            <!-- Máscara cobrindo o nariz e a boca -->
-            <path class="traco" d="M68 95 Q100 115 132 95 L130 135 Q100 143 70 135 Z"/>
-            <!-- Olho direito visível com expressão confiante -->
-            <path class="traco" d="M90 108 Q100 100 110 108"/>
-            <!-- Bochecha -->
-            <ellipse class="bochecha" cx="100" cy="116" rx="6" ry="3"/>
+            <path class="traco" d="M100 60 C 124 58, 142 78, 140 100 C 139 124, 120 141, 99 140 C 76 139, 59 121, 60 99 C 61 77, 78 61, 102 61"/>
+            <path class="traco" d="M100 18 L101 40 M99 160 L100 182 M18 101 L40 100 M160 99 L182 100 M42 44 L57 58 M143 142 L158 157 M158 43 L143 58 M57 143 L42 158"/>
+            <path class="traco" d="M86 91 L86 97 M114 91 L114 97 M84 110 Q100 125 116 110"/>
+            <ellipse class="bochecha" cx="77" cy="108" rx="7" ry="4"/>
+            <ellipse class="bochecha" cx="123" cy="108" rx="7" ry="4"/>
           </svg>
           <p class="cena__texto">Desde que você apareceu, meus dias ficaram bem mais leves.</p>
         </section>
@@ -98,19 +89,30 @@
           <p class="cena__texto">E qualquer coisa boba fica especial quando é com você.</p>
         </section>
 
-        <!-- CENA: Lata de Monster -->
+        <!-- CENA: Kakashi e a Lata de Monster lado a lado -->
         <section class="cena" data-cor="#e5eeff">
           <svg class="rabisco" viewBox="0 0 200 200" aria-hidden="true">
-            <!-- Corpo da lata -->
-            <path class="traco" d="M75 45 L125 45 L128 60 L128 150 Q128 160 118 160 L82 160 Q72 160 72 150 L72 60 Z"/>
-            <!-- Detalhe do lacre/topo da lata -->
-            <path class="traco" d="M85 45 L85 35 Q100 30 115 35 L115 45"/>
-            <path class="traco" d="M95 38 L105 38"/>
-            <!-- O "M" estilizado clássico da Monster na frente da lata -->
-            <path class="traco" d="M88 80 L96 115 L100 95 L104 115 L112 80"/>
-            <path class="traco" d="M88 80 L84 75 M112 80 L116 75"/>
-            <!-- Rasuras/detalhes de energia ao redor -->
-            <path class="traco" d="M60 70 L48 65 M140 120 L152 125 M55 130 L45 138"/>
+            <!-- Kakashi (desenhado mais à esquerda) -->
+            <g transform="translate(-40, 5)">
+              <path class="traco" d="M70 70 L60 30 L85 50 L100 20 L115 50 L140 30 L130 70"/>
+              <path class="traco" d="M65 70 Q65 140 100 145 Q135 140 135 70 Z"/>
+              <path class="traco" d="M62 70 L138 70 L135 95 L65 95 Z"/>
+              <path class="traco" d="M85 73 L115 73 L115 92 L85 92 Z"/>
+              <circle class="traco" cx="100" cy="82" r="3"/>
+              <path class="traco" d="M68 95 Q100 115 132 95 L130 135 Q100 143 70 135 Z"/>
+              <path class="traco" d="M90 108 Q100 100 110 108"/>
+              <ellipse class="bochecha" cx="100" cy="116" rx="6" ry="3"/>
+            </g>
+
+            <!-- Lata de Monster (desenhada mais à direita) -->
+            <g transform="translate(50, 5) scale(0.7)">
+              <path class="traco" d="M75 45 L125 45 L128 60 L128 150 Q128 160 118 160 L82 160 Q72 160 72 150 L72 60 Z"/>
+              <path class="traco" d="M85 45 L85 35 Q100 30 115 35 L115 45"/>
+              <path class="traco" d="M95 38 L105 38"/>
+              <path class="traco" d="M88 80 L96 115 L100 95 L104 115 L112 80"/>
+              <path class="traco" d="M88 80 L84 75 M112 80 L116 75"/>
+              <path class="traco" d="M60 70 L48 65 M140 120 L152 125 M55 130 L45 138"/>
+            </g>
           </svg>
           <p class="cena__texto">Sei que não sou o Kakashi Hatake, e nem uma lata de Monster mas...</p>
         </section>
@@ -121,7 +123,7 @@
             <path class="traco" d="M84 162 L100 180 L118 164"/>
             <path class="preenche" d="M150 40 C 140 33, 141 23, 147 24 C 148 25, 149 26, 150 28 C 151 26, 152 25, 153 24 C 159 23, 160 33, 150 40 Z"/>
           </svg>
-          <p class="cena__texto">Então eu criei coragem pra te perguntar uma coisa…</p>
+          <p class="cena__texto">Mesmo assim eu criei coragem pra te perguntar uma coisa…</p>
         </section>
 
       </div>
